@@ -25,6 +25,12 @@ class User extends BaseUser
 	 */
 	protected $id;
 
+	/**
+	 * @ORM\Column(type="string")
+	 */
+	private $chatworkToken;
+
+
     /**
      * Get id
      *
@@ -33,5 +39,28 @@ class User extends BaseUser
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * Set chatworkToken
+     *
+     * @param string $chatworkToken
+     * @return User
+     */
+    public function setChatworkToken($chatworkToken)
+    {
+        $this->chatworkToken = $chatworkToken;
+
+        return $this;
+    }
+
+    /**
+     * Get chatworkToken
+     *
+     * @return string 
+     */
+    public function getChatworkToken()
+    {
+        return $this->chatworkToken;
     }
 }
