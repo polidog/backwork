@@ -1,0 +1,11 @@
+<form action="{{ path("fos_user_security_check") }}" method="post" class="navbar-form pull-right">
+    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+
+    <label for="username">ユーザー名</label>
+    <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+
+    <label for="password">パスワード</label>
+    <input type="password" id="password" name="_password" required="required" />
+
+    <input type="submit" class="btn" id="_submit" name="_submit" value="Login" />
+</form>
