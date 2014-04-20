@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e047c0a2f97febf506e92da52f54348d",
+    "hash": "6810f89f4b3711e814d6eb08501e5a65",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -625,6 +625,75 @@
             "time": "2014-02-08 16:35:09"
         },
         {
+            "name": "friendsofsymfony/user-bundle",
+            "version": "dev-master",
+            "target-dir": "FOS/UserBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
+                "reference": "e4c000a9b19096be0135d0773b56f7c757c93542"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/e4c000a9b19096be0135d0773b56f7c757c93542",
+                "reference": "e4c000a9b19096be0135d0773b56f7c757c93542",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/form": "~2.1",
+                "symfony/framework-bundle": "~2.1",
+                "symfony/security-bundle": "~2.1"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "*",
+                "swiftmailer/swiftmailer": ">=4.3, <6.0",
+                "symfony/validator": "~2.1",
+                "symfony/yaml": "~2.1",
+                "twig/twig": "~1.5",
+                "willdurand/propel-typehintable-behavior": "dev-master"
+            },
+            "suggest": {
+                "willdurand/propel-typehintable-behavior": "Needed when using the propel implementation"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "FOS\\UserBundle": ""
+                }
+            },
+            "notification-url": "http://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christophe Coevoet",
+                    "email": "stof@notk.org"
+                },
+                {
+                    "name": "Thibault Duplessis",
+                    "email": "thibault.duplessis@gmail.com",
+                    "homepage": "http://ornicar.github.com"
+                },
+                {
+                    "name": "FriendsOfSymfony Community",
+                    "homepage": "https://github.com/friendsofsymfony/FOSUserBundle/contributors"
+                }
+            ],
+            "description": "Symfony FOSUserBundle",
+            "homepage": "http://friendsofsymfony.github.com",
+            "keywords": [
+                "User management"
+            ],
+            "time": "2014-04-08 21:21:16"
+        },
+        {
             "name": "incenteev/composer-parameter-handler",
             "version": "v2.1.0",
             "target-dir": "Incenteev/ParameterHandler",
@@ -1153,54 +1222,6 @@
             "time": "2013-08-21 18:09:35"
         },
         {
-            "name": "seven/symfony-rpc-bundle",
-            "version": "dev-master",
-            "target-dir": "Seven/RpcBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/skolodyazhnyy/symfony-rpc-bundle.git",
-                "reference": "ea2fb7a60cff6709d5b885c83434f75ebf89927f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/skolodyazhnyy/symfony-rpc-bundle/zipball/ea2fb7a60cff6709d5b885c83434f75ebf89927f",
-                "reference": "ea2fb7a60cff6709d5b885c83434f75ebf89927f",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/framework-bundle": "2.*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "*"
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-0": {
-                    "Seven\\RpcBundle": ""
-                }
-            },
-            "notification-url": "http://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Sergey Kolodyazhnyy",
-                    "email": "sergey.kolodyazhnyy@gmail.com"
-                }
-            ],
-            "description": "This Symfony bundle provide easy way to create XMLRPC server",
-            "keywords": [
-                "bundle",
-                "rpc",
-                "server",
-                "symfony",
-                "xml-rpc",
-                "xmlrpc"
-            ],
-            "time": "2014-03-10 11:54:58"
-        },
-        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.1.0",
             "source": {
@@ -1711,7 +1732,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "polidog/php-chatwork-api": 20,
-        "seven/symfony-rpc-bundle": 20
+        "friendsofsymfony/user-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
