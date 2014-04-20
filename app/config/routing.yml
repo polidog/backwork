@@ -2,3 +2,11 @@ polidog_backwork:
     resource: "@PolidogBackworkBundle/Controller"
     type:   annotation
 
+fos_user_register:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register
+
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+
+
