@@ -24,6 +24,19 @@ class DefaultController extends Controller
 	 */
 	public function indexAction()
     {
+		if ($this->get("security.context")->isGranted("ROLE_USER")) {
+			return $this->redirect($this->generateUrl("polidog_backwork_default_dashboard"));
+		}
         return [];
     }
+
+	/**
+	 * @Route("/dashboard")
+	 * @Template
+	 * @Method({"GET"})
+	 */
+	public function dashboardAction()
+	{
+		return [];
+	}
 }
