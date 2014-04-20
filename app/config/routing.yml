@@ -1,4 +1,4 @@
 polidog_backwork:
-    resource: "@PolidogBackworkBundle/Resources/config/routing.yml"
-    prefix:   /
+    resource: "@PolidogBackworkBundle/Controller"
+    type:   annotation
 
