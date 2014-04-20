@@ -18,7 +18,11 @@
         "sensio/distribution-bundle": "~2.3",
         "sensio/framework-extra-bundle": "~3.0",
         "sensio/generator-bundle": "~2.3",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "incenteev/composer-parameter-handler": "~2.0",
+
+        "polidog/php-chatwork-api": "dev-master",
+        "seven/symfony-rpc-bundle": "dev-master"
+
     },
     "scripts": {
         "post-install-cmd": [
