@@ -21,7 +21,11 @@
         "incenteev/composer-parameter-handler": "~2.0",
 
         "polidog/php-chatwork-api": "dev-master",
-        "friendsofsymfony/user-bundle": "~2.0@dev"
+        "friendsofsymfony/user-bundle": "~2.0@dev",
+
+        "doctrine/migrations": "dev-master",
+        "doctrine/doctrine-migrations-bundle": "dev-master",
+        "stof/doctrine-extensions-bundle": "~1.1@dev"
 
     },
     "scripts": {
